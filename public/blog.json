@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/3yBRssw/2337097.jpg",
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "author": "John Doe",
+      "img": "https://i.ibb.co/CQ89rKr/author.jpg",
+      "posted_date": "2024-03-18",
+      "reading_time": "10"
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/2d098K4/blog2.jpg",
+      "title": "Consectetur Adipiscing Elit",
+      "author": "Jane Smith",
+      "img": "https://i.ibb.co/CQ89rKr/author.jpg",
+      "posted_date": "2024-03-17",
+      "reading_time": "8"
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/0GRBFJf/banner3.jpg",
+      "title": "Sed Do Eiusmod Tempor Incididunt",
+      "author": "David Johnson",
+      "img": "https://i.ibb.co/CQ89rKr/author.jpg",
+      "posted_date": "2024-03-16",
+      "reading_time": "12"
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co/wJTLSPL/blog3.jpg",
+      "title": "Ut Labore Et Dolore Magna Aliqua",
+      "author": "Emily Brown",
+      "img": "https://i.ibb.co/CQ89rKr/author.jpg",
+      "posted_date": "2024-03-15",
+      "reading_time": "15"
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co/tBVwYC6/blog4.jpg",
+      "title": "Excepteur Sint Occaecat Cupidatat Non Proident",
+      "author": "Michael Wilson",
+      "img": "https://i.ibb.co/CQ89rKr/author.jpg",
+      "posted_date": "2024-03-14",
+      "reading_time": "7"
+    }
+  ]
+  
