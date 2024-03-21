@@ -8,6 +8,7 @@ import propTypes from 'prop-types'
 function App() {
 
   const [bookmarks, setBookmarks] = useState([]);
+  
   const handleAddBookmark = blog => {
     const newBookmarks = [...bookmarks, blog];
     setBookmarks(newBookmarks);
@@ -17,7 +18,7 @@ function App() {
      <Header></Header>
      <div className='md:flex max-w-5xl mx-auto'>
      <Blogs handleAddBookmark={handleAddBookmark}></Blogs>
-     <BookMarks></BookMarks>
+     <BookMarks bookmarks={bookmarks}></BookMarks>
      </div>
      
     </>
@@ -26,4 +27,4 @@ function App() {
 App.propTypes ={
   blog: propTypes.func,
 }
-export default App
+export default App;

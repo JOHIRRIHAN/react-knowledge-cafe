@@ -13,12 +13,14 @@ const Blogs = ({ handleAddBookmark }) => {
   return (
     <div className="md:w-2/3">
       <h3>Blogs: {blogs.length}</h3>
-      {blogs.map((blog) => (
-        <Blog key={blogs.id}
+      {
+      blogs.map(blog => 
+        <Blog
+         key={blog.id}
          blog={blog}
          handleAddBookmark={handleAddBookmark}
-         ></Blog>
-      ))}
+         ></Blog>)
+      }
     </div>
   );
 };
