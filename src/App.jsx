@@ -8,17 +8,24 @@ import propTypes from 'prop-types'
 function App() {
 
   const [bookmarks, setBookmarks] = useState([]);
-  
+  const [readingTime, setReadingTime] = useState(0);
   const handleAddBookmark = blog => {
     const newBookmarks = [...bookmarks, blog];
     setBookmarks(newBookmarks);
+  }
+
+  const handleMarkAsRead = (id,time) => {
+    const newReadingTime = readingTime + time;
+    setReadingTime(newReadingTime);
+    const remainingBookMark= bookmarks.filter(bookmark => bookmark.id !== id);
+    setBookmarks(remainingBookMark)
   }
   return (
     <>
      <Header></Header>
      <div className='md:flex max-w-5xl mx-auto'>
-     <Blogs handleAddBookmark={handleAddBookmark}></Blogs>
-     <BookMarks bookmarks={bookmarks}></BookMarks>
+     <Blogs handleAddBookmark={handleAddBookmark} handleMarkAsRead={handleMarkAsRead}></Blogs>
+     <BookMarks bookmarks={bookmarks} readingTime={readingTime}></BookMarks>
      </div>
      
     </>
